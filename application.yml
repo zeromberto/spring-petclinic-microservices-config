@@ -21,3 +21,8 @@ management.security.enabled: false
 
 # Logging
 logging.level.org.springframework: INFO
+
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
