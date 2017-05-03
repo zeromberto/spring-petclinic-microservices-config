@@ -24,7 +24,7 @@ logging.level.org.springframework: INFO
 
 eureka:
   instance:
-    prefer-ip-address: true
-    ip-address: 192.168.99.100
+    #prefer-ip-address: true
+    #ip-address: 192.168.99.100
     leaseRenewalIntervalInSeconds: 1
     leaseExpirationDurationInSeconds: 2
