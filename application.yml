@@ -10,12 +10,14 @@ spring:
     url: jdbc:mysql://192.168.99.100:3306/petclinic
     #schema: classpath*:db/${petclinic.database}/schema.sql
     #data: classpath*:db/${petclinic.database}/data.sql
+    username: root
+    password: petclinic
   sleuth:
     sampler:
       percentage: 1.0
 
 # JPA
-spring.jpa.hibernate.ddl-auto: none
+spring.jpa.hibernate.ddl-auto: update
 
 # Spring Boot 1.5 makes actuator secure by default
 management.security.enabled: false
