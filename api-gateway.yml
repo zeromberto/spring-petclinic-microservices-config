@@ -17,6 +17,7 @@ server:
 # Internationalization
 spring.messages.basename: messages/messages
 
+zuul.ribbon-isolation-strategy: thread
 hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 2000
 
 ---
