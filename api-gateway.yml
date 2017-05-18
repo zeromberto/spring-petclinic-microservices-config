@@ -18,7 +18,7 @@ server:
 spring.messages.basename: messages/messages
 
 zuul.ribbon-isolation-strategy: thread
-hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 2000
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 20000
 
 ---
 spring:
