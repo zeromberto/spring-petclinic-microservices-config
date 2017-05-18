@@ -17,6 +17,8 @@ server:
 # Internationalization
 spring.messages.basename: messages/messages
 
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 2000
+
 ---
 spring:
   profiles: docker
