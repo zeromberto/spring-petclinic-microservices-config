@@ -17,9 +17,10 @@ server:
 # Internationalization
 spring.messages.basename: messages/messages
 
-zuul.ribbon-isolation-strategy: thread
-hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 1000
-hystrix.threadpool.HystrixThreadPoolKey.coreSize: 20
+zuul.ribbon-isolation-strategy: semaphore
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 500
+hystrix.command.HystrixCommandKey.execution.isolation.semaphore.maxConcurrentRequests: 20
+#hystrix.threadpool.HystrixThreadPoolKey.coreSize: 20
 
 ---
 spring:
