@@ -18,9 +18,9 @@ server:
 spring.messages.basename: messages/messages
 
 # Circuit Breaker
-hystrix.command.HystrixCommandKey.execution.timeout.enabled: false
-hystrix.command.HystrixCommandKey.circuitBreaker.enabled: false
-hystrix.command.HystrixCommandKey.circuitBreaker.forceClosed: true
+#hystrix.command.HystrixCommandKey.execution.timeout.enabled: false
+#hystrix.command.HystrixCommandKey.circuitBreaker.enabled: false
+#hystrix.command.HystrixCommandKey.circuitBreaker.forceClosed: true
 
 ---
 spring:
