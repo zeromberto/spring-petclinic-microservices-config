@@ -17,10 +17,11 @@ server:
 # Internationalization
 spring.messages.basename: messages/messages
 
-zuul.ribbon-isolation-strategy: semaphore
-hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 500
-hystrix.command.HystrixCommandKey.execution.isolation.semaphore.maxConcurrentRequests: 20
-#hystrix.threadpool.HystrixThreadPoolKey.coreSize: 20
+# Circuit Breaker
+hystrix.command.HystrixCommandKey.execution.isolation.strategy: semaphore
+hystrix.command.HystrixCommandKey.execution.timeout.enabled: false
+hystrix.command.HystrixCommandKey.circuitBreaker.enabled: false
+hystrix.command.HystrixCommandKey.circuitBreaker.forceClosed: true
 
 ---
 spring:
