@@ -18,20 +18,12 @@ server:
 spring.messages.basename: messages/messages
 
 # Circuit Breaker
-hystrix.command.HystrixCommandKey.execution.timeout.enabled: false
-hystrix.command.HystrixCommandKey.circuitBreaker.enabled: false
-hystrix.command.HystrixCommandKey.circuitBreaker.forceClosed: true
+hystrix.command.default.execution.timeout.enabled: false
+hystrix.command.default.circuitBreaker.enabled: false
+hystrix.command.default.circuitBreaker.forceClosed: true
 
 # Loadbalancer
 #customers-service:
 #  ribbon:
 #    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.WeightedResponseTimeRule
 
----
-spring:
-  profiles: docker
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://discovery-server:8761/eureka/
-    fetchRegistry: true
