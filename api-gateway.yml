@@ -27,11 +27,3 @@ hystrix.command.HystrixCommandKey.circuitBreaker.forceClosed: true
 #  ribbon:
 #    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.WeightedResponseTimeRule
 
----
-spring:
-  profiles: docker
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://discovery-server:8761/eureka/
-    fetchRegistry: true
