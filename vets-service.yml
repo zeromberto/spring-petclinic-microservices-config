@@ -13,6 +13,6 @@ eureka:
 
 ---
 spring:
-  profiles: calibration
+  profiles: EvalVar2
 server:
   port: 8083

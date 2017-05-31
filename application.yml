@@ -34,7 +34,7 @@ eureka:
 
 ---
 spring:
-  profiles: calibration
+  profiles: EvalVar2
 eureka:
   client:
     serviceUrl:
