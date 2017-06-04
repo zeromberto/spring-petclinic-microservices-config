@@ -22,6 +22,9 @@ spring.jpa.hibernate.ddl-auto: update
 # Spring Boot 1.5 makes actuator secure by default
 management.security.enabled: false
 
+# Tomcat
+server.tomcat.max-threads: 1
+
 # Logging
 logging.level.org.springframework: INFO
 
