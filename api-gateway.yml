@@ -22,6 +22,9 @@ hystrix.command.default.execution.timeout.enabled: false
 hystrix.command.default.circuitBreaker.enabled: false
 hystrix.command.default.circuitBreaker.forceClosed: true
 
+# Tomcat
+server.tomcat.max-threads: 1
+
 # Loadbalancer
 #customers-service:
 #  ribbon:
