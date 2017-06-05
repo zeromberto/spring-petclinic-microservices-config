@@ -18,12 +18,12 @@ server:
 spring.messages.basename: messages/messages
 
 # Circuit Breaker
-hystrix.command.default.execution.timeout.enabled: true
-hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 60
-hystrix.command.default.circuitBreaker.enabled: true
-hystrix.command.default.circuitBreaker.requestVolumeThreshold: 20 # number of fails
-hystrix.command.default.circuitBreaker.sleepWindowInMilliseconds: 10000 # reset time
-hystrix.command.default.circuitBreaker.errorThresholdPercentage: 90
+customers-service.hystrix.command.default.execution.timeout.enabled: true
+customers-service.hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 60
+customers-service.hystrix.command.default.circuitBreaker.enabled: true
+customers-service.hystrix.command.default.circuitBreaker.requestVolumeThreshold: 20 # number of fails
+customers-service.hystrix.command.default.circuitBreaker.sleepWindowInMilliseconds: 10000 # reset time
+customers-service.hystrix.command.default.circuitBreaker.errorThresholdPercentage: 75
 
 # Loadbalancer
 #customers-service:
