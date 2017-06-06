@@ -22,8 +22,8 @@ hystrix.command.default.execution.timeout.enabled: true
 hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 40
 hystrix.command.default.circuitBreaker.enabled: true
 hystrix.command.default.circuitBreaker.requestVolumeThreshold: 20 # number of fails
-hystrix.command.default.circuitBreaker.sleepWindowInMilliseconds: 10000 # reset time
-hystrix.command.default.circuitBreaker.errorThresholdPercentage: 90
+hystrix.command.default.circuitBreaker.sleepWindowInMilliseconds: 30000 # reset time
+hystrix.command.default.circuitBreaker.errorThresholdPercentage: 75
 
 # Loadbalancer
 #customers-service:
