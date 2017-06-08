@@ -1,23 +1,36 @@
 # COMMON APPLICATION PROPERTIES
 
 # start services on random port by default
-server.port: 0
+server:
+  port: 0
+  tomcat:
+    max-threads: 4000
 
 # database init, supports mysql too
-petclinic.database: mysql
+petclinic.database: hsqldb
 spring:
   datasource:
-    url: jdbc:mysql://141.21.48.51:3306/petclinic
-    #schema: classpath*:db/${petclinic.database}/schema.sql
-    #data: classpath*:db/${petclinic.database}/data.sql
-    username: root
-    password: petclinic
+    #url: jdbc:mysql://141.21.48.51:3306/petclinic
+    schema: classpath*:db/${petclinic.database}/schema.sql
+    data: classpath*:db/${petclinic.database}/data.sql
+    #username: root
+    #password: petclinic
+    default-transaction-isolation: 4
+    default-transaction-isolation-level: 4
+    max-active: 800
+    maxActive: 800
+    tomcat:
+      default-transaction-isolation: 4
+      max-active: 4000
+    jpa:
+      defaultIsolationLevel: repeatable_read
+
   sleuth:
     sampler:
       percentage: 1.0
 
 # JPA
-spring.jpa.hibernate.ddl-auto: update
+spring.jpa.hibernate.ddl-auto: none
 
 # Spring Boot 1.5 makes actuator secure by default
 management.security.enabled: false
