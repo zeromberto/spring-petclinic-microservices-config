@@ -1,4 +1,4 @@
 ﻿spring:
-  profiles: EvalVar1
+  profiles: EvalVar3
 server:
   port: 8082

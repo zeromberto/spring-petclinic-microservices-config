@@ -46,7 +46,7 @@ eureka:
 
 ---
 spring:
-  profiles: EvalVar1
+  profiles: EvalVar3
 eureka:
   client:
     serviceUrl:
