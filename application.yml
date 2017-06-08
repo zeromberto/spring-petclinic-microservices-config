@@ -12,6 +12,7 @@ spring:
     #data: classpath*:db/${petclinic.database}/data.sql
     username: root
     password: petclinic
+    maxActive: 128
   sleuth:
     sampler:
       percentage: 1.0
