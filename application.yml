@@ -31,11 +31,6 @@ eureka:
     #ip-address: 192.168.99.100
     leaseRenewalIntervalInSeconds: 1
     leaseExpirationDurationInSeconds: 2
-
----
-spring:
-  profiles: EvalVar1
-eureka:
   client:
     serviceUrl:
-      defaultZone: http://discovery-server:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
