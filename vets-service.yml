@@ -1,10 +1,4 @@
-﻿vets:
-  cache:
-    ttl: 60
-    heap-size: 100
-
----
-spring:
+﻿spring:
   profiles: default
 eureka:
   instance:
