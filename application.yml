@@ -16,7 +16,9 @@ spring:
     sampler:
       percentage: 1.0
 
-spring.datasource.tomcat.max-active: 128
+spring.datasource.max-active: 128
+spring.datasource.defaultTransactionIsolation: REPEATABLE_READ
+
 # JPA
 spring.jpa.hibernate.ddl-auto: update
 
