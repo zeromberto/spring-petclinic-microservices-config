@@ -1,12 +1,4 @@
 ﻿spring:
-  profiles: default
-eureka:
-  instance:
-    # enable to register multiple app instances with a random server port
-    instance-id: ${spring.application.name}:${random.uuid}
-
----
-spring:
   profiles: calibration
 server:
   port: 8081
