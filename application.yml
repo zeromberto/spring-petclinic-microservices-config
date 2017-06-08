@@ -12,11 +12,11 @@ spring:
     #data: classpath*:db/${petclinic.database}/data.sql
     username: root
     password: petclinic
-    maxActive: 128
   sleuth:
     sampler:
       percentage: 1.0
 
+spring.datasource.tomcat.max-active: 128
 # JPA
 spring.jpa.hibernate.ddl-auto: update
 
