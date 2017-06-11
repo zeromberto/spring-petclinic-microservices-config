@@ -31,16 +31,16 @@ customers-service:
   ribbon:
     eureka:
       enabled: false
-    listOfServers: customers-service:8081
+    listOfServers: 141.21.48.51:8081
 
 vets-service:
   ribbon:
     eureka:
       enabled: false
-    listOfServers: vets-service:8083
+    listOfServers: 141.21.48.51:8083
 
 visits-service:
   ribbon:
     eureka:
       enabled: false
-    listOfServers: visits-service:8082
+    listOfServers: 141.21.48.51:8082
