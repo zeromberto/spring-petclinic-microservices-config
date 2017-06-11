@@ -20,27 +20,8 @@ spring.messages.basename: messages/messages
 # Circuit Breaker
 hystrix.command.default.execution.isolation.thread.interruptOnTimeout: false
 hystrix.command.default.execution.timeout.enabled: true
-hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 13
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 1000
 hystrix.command.default.circuitBreaker.enabled: true
 hystrix.command.default.circuitBreaker.requestVolumeThreshold: 30 # number of fails
 hystrix.command.default.circuitBreaker.sleepWindowInMilliseconds: 30000 # reset time
 hystrix.command.default.circuitBreaker.errorThresholdPercentage: 50
-
-# Loadbalancer
-customers-service:
-  ribbon:
-    eureka:
-      enabled: false
-    listOfServers: 141.21.48.51:8081
-
-vets-service:
-  ribbon:
-    eureka:
-      enabled: false
-    listOfServers: 141.21.48.51:8083
-
-visits-service:
-  ribbon:
-    eureka:
-      enabled: false
-    listOfServers: 141.21.48.51:8082
