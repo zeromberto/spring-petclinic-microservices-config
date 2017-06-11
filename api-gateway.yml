@@ -27,7 +27,14 @@ hystrix.command.default.circuitBreaker.sleepWindowInMilliseconds: 30000 # reset 
 hystrix.command.default.circuitBreaker.errorThresholdPercentage: 50
 
 # Loadbalancer
-#customers-service:
-#  ribbon:
-#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.WeightedResponseTimeRule
+customers-service:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
 
+vets-service:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
+
+visits-service:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
