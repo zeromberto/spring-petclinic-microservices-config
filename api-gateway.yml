@@ -29,12 +29,18 @@ hystrix.command.default.circuitBreaker.errorThresholdPercentage: 50
 # Loadbalancer
 customers-service:
   ribbon:
-    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
+    eureka:
+      enabled: false
+    listOfServers: customers-service:8081
 
 vets-service:
   ribbon:
-    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
+    eureka:
+      enabled: false
+    listOfServers: vets-service:8083
 
 visits-service:
   ribbon:
-    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
+    eureka:
+      enabled: false
+    listOfServers: visits-service:8082
