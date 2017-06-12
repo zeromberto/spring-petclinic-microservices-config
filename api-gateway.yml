@@ -27,5 +27,6 @@ hystrix.command.default.circuitBreaker.enabled: false
 # Loadbalancer
 customers-service:
   ribbon:
-    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.WeightedResponseTimeRule
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.AvailabilityFilteringRule
     ServerListRefreshInterval: 30000
+niws.loadbalancer.customers-service.connectionFailureCountThreshold: 1
