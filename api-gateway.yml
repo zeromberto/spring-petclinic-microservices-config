@@ -18,9 +18,11 @@ server:
 spring.messages.basename: messages/messages
 
 # Circuit Breaker
+hystrix.threadpool.default.coreSize: 50
+hystrix.command.default.execution.isolation.thread.interruptOnTimeout: false
 hystrix.command.default.execution.timeout.enabled: false
 hystrix.command.default.circuitBreaker.enabled: false
-hystrix.command.default.circuitBreaker.forceClosed: true
+
 
 # Loadbalancer
 customers-service:
