@@ -20,7 +20,7 @@ spring.messages.basename: messages/messages
 # Circuit Breaker
 hystrix.threadpool.default.coreSize: 30
 hystrix.command.default.execution.isolation.thread.interruptOnTimeout: false
-hystrix.command.default.execution.timeout.enabled: false
+hystrix.command.default.execution.timeout.enabled: true
 hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 35
 hystrix.command.default.circuitBreaker.enabled: true
 hystrix.command.default.circuitBreaker.requestVolumeThreshold: 1000 # number of fails
