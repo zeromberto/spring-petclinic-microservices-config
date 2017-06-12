@@ -23,7 +23,7 @@ hystrix.command.default.circuitBreaker.enabled: false
 hystrix.command.default.circuitBreaker.forceClosed: true
 
 # Loadbalancer
-#customers-service:
-#  ribbon:
-#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.WeightedResponseTimeRule
-
+customers-service:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
+    ServerListRefreshInterval: 30000
