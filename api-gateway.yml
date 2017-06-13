@@ -26,4 +26,4 @@ hystrix.command.default.circuitBreaker.enabled: false
 hystrix.command.default.circuitBreaker.requestVolumeThreshold: 1000 # number of fails
 hystrix.command.default.circuitBreaker.sleepWindowInMilliseconds: 30000 # reset time
 hystrix.command.default.circuitBreaker.errorThresholdPercentage: 50
-hystrix.command.customers-service.execution.isolation.semaphore.maxConcurrentRequests: 500
+hystrix.command.customers-service.execution.isolation.semaphore.maxConcurrentRequests: 1000
