@@ -29,4 +29,3 @@ customers-service:
   ribbon:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.AvailabilityFilteringRule
     ServerListRefreshInterval: 3
-niws.loadbalancer.customers-service.connectionFailureCountThreshold: 10000000
