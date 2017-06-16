@@ -27,6 +27,7 @@ hystrix.command.customers-service.execution.isolation.semaphore.maxConcurrentReq
 hystrix.command.customers-service.execution.timeout.enabled: true
 hystrix.command.customers-service.execution.isolation.thread.timeoutInMilliseconds: 200
 hystrix.command.customers-service.circuitBreaker.enabled: true
-hystrix.command.customers-service.circuitBreaker.requestVolumeThreshold: 400 # number of fails
+hystrix.command.customers-service.circuitBreaker.requestVolumeThreshold: 200 # number of fails
 hystrix.command.customers-service.circuitBreaker.sleepWindowInMilliseconds: 5000 # reset time
-hystrix.command.customers-service.circuitBreaker.errorThresholdPercentage: 50
+hystrix.command.customers-service.circuitBreaker.errorThresholdPercentage: 1
+hystrix.command.customers-service.fallback.enabled: false
