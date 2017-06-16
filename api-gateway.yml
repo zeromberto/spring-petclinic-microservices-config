@@ -22,6 +22,7 @@ hystrix.threadpool.default.coreSize: 30
 hystrix.command.default.execution.isolation.thread.interruptOnTimeout: false
 hystrix.command.default.execution.timeout.enabled: false
 hystrix.command.default.circuitBreaker.enabled: false
+hystrix.command.default.execution.isolation.semaphore.maxConcurrentRequests: 2000
 
 
 # Loadbalancer
