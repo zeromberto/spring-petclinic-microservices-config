@@ -28,5 +28,5 @@ hystrix.command.default.circuitBreaker.enabled: false
 customers-service:
   ribbon:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.AvailabilityFilteringRule
-    ServerListRefreshInterval: 30000
+    ServerListRefreshInterval: 1
 niws.loadbalancer.customers-service.connectionFailureCountThreshold: 1
