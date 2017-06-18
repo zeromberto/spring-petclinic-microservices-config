@@ -31,4 +31,5 @@ hystrix.command.vets-service.execution.isolation.semaphore.maxConcurrentRequests
 customers-service:
   ribbon:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.AvailabilityFilteringRule
-    ServerListRefreshInterval: 3
+    ServerListRefreshInterval: 1
+niws.loadbalancer.customers-service.connectionFailureCountThreshold: 1
