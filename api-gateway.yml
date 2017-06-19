@@ -28,4 +28,4 @@ hystrix.command.default.circuitBreaker.enabled: false
 customers-service:
   ribbon:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
-    ServerListRefreshInterval: 30000
+    ServerListRefreshInterval: 3
