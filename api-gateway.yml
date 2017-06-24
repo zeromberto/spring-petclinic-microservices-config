@@ -33,3 +33,5 @@ hystrix.command.customers-service.circuitBreaker.sleepWindowInMilliseconds: 2500
 hystrix.command.customers-service.metrics.rollingStats.timeInMilliseconds: 25000
 hystrix.command.customers-service.circuitBreaker.errorThresholdPercentage: 1
 hystrix.command.customers-service.fallback.enabled: false
+customers-service.ribbon.ConnectTimeout: 30000
+customers-service.ribbon.ReadTimeout: 30000
