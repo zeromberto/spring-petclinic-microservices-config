@@ -29,8 +29,8 @@ hystrix.command.customers-service.execution.timeout.enabled: true
 hystrix.command.customers-service.execution.isolation.thread.timeoutInMilliseconds: 3000
 hystrix.command.customers-service.circuitBreaker.enabled: true
 hystrix.command.customers-service.circuitBreaker.requestVolumeThreshold: 39
-hystrix.command.customers-service.circuitBreaker.sleepWindowInMilliseconds: 50000
-hystrix.command.customers-service.metrics.rollingStats.timeInMilliseconds: 50000
+hystrix.command.customers-service.circuitBreaker.sleepWindowInMilliseconds: 15000
+hystrix.command.customers-service.metrics.rollingStats.timeInMilliseconds: 30000
 hystrix.command.customers-service.circuitBreaker.errorThresholdPercentage: 49
 hystrix.command.customers-service.fallback.enabled: false
 hystrix.command.customers-service.metrics.rollingStats.numBuckets: 2
