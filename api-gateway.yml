@@ -28,11 +28,11 @@ hystrix.command.customers-service.execution.isolation.semaphore.maxConcurrentReq
 hystrix.command.customers-service.execution.timeout.enabled: true
 hystrix.command.customers-service.execution.isolation.thread.timeoutInMilliseconds: 3000
 hystrix.command.customers-service.circuitBreaker.enabled: true
-hystrix.command.customers-service.circuitBreaker.requestVolumeThreshold: 10
+hystrix.command.customers-service.circuitBreaker.requestVolumeThreshold: 39
 hystrix.command.customers-service.circuitBreaker.sleepWindowInMilliseconds: 25000
-hystrix.command.customers-service.metrics.rollingStats.timeInMilliseconds: 25000
-hystrix.command.customers-service.circuitBreaker.errorThresholdPercentage: 37
+hystrix.command.customers-service.metrics.rollingStats.timeInMilliseconds: 50000
+hystrix.command.customers-service.circuitBreaker.errorThresholdPercentage: 49
 hystrix.command.customers-service.fallback.enabled: false
-hystrix.command.customers-service.metrics.rollingStats.numBuckets: 1
+hystrix.command.customers-service.metrics.rollingStats.numBuckets: 2
 customers-service.ribbon.ConnectTimeout: 30000
 customers-service.ribbon.ReadTimeout: 30000
