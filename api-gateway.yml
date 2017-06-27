@@ -30,5 +30,5 @@ hystrix.command.vets-service.execution.isolation.semaphore.maxConcurrentRequests
 # Loadbalancer
 customers-service:
   ribbon:
-    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.WeightedResponseTimeRule
     ServerListRefreshInterval: 3
